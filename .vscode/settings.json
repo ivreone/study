@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 9999,
+            "askForPassword": true,
+            "driver": "MySQL",
+            "name": "test",
+            "database": "ivreon2b_anka",
+            "username": "ivreon2b_anka"
+        }
+    ]
+}
