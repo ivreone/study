@@ -1,0 +1,32 @@
+---
+apiVersion: ext/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 2
+  selector:
+    matchlabels:
+      app: my-app
+  strategy:
+    rolingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RolingUpdate
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+       containers:
+        - image: nginx:1.12
+          name: nginx
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"

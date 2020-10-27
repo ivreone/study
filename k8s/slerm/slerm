@@ -1,0 +1,162 @@
+УРОК 2.
+Презентация: https://github.com/southbridgeio/slurm-school-k8s/blob/master/2.Docker_basics/Docker_basics.pdf
+
+Домашнее задание
+https://github.com/southbridgeio/slurm-school-k8s/blob/master/2.Docker_basics/Homework.txt
+1. Посмотреть тома Docker(dockervolume).
+2. Познакомится ближе с механизмами контейнеризации (unshare, netns, systemd-cgls).
+3. Как ограничить ресурсы контейнеру (cpu/ram)?
+
+Полезные ссылки
+https://docs.docker.com/storage/volumes/
+https://fabiokung.com/2014/03/13/memory-inside-linux-containers/
+https://docs.docker.com/config/containers/resource_constraints/
+https://habr.com/ru/company/selectel/blog/279281/
+
+
+УРОК 3.
+Презентация: https://github.com/southbridgeio/slurm-school-k8s/blob/master/3.Docker-compose/Docker-compose.pdf
+
+Домашнее задание
+https://github.com/southbridgeio/slurm-school-k8s/blob/master/3.Docker-compose/Homework.txt
+1. Почитать больше про CI/CD.
+2. Запустить приложение в Docker-compose.
+3. Настроить ему CI/CD с тестами и ревью.
+4. Создать свой базовый образ*.
+
+Полезные ссылки
+https://clck.ru/MBtKt - про CI/CD в целом
+https://docs.docker.com/compose/
+https://docs.docker.com/compose/gettingstarted/
+https://docs.gitlab.com/ee/ci/docker/using_docker_build.html
+https://docs.docker.com/develop/develop-images/baseimages/
+https://habr.com/ru/company/southbridge/blog/329138/
+
+
+УРОК 4.
+Презентация: https://github.com/southbridgeio/slurm-school-k8s/tree/master/4.Kubernetes_introduction
+Домашняя работа опубликована на странице следующего вебинара.
+
+Полезные ссылки:
+https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/
+
+
+УРОК 5.
+Презентация: https://github.com/southbridgeio/slurm-school-k8s/tree/master/4.Kubernetes_introduction
+
+Домашняя работа:
+• Запустить Pod, Replicaset, Deployment
+• Посмотреть что происходит на уровне Docker
+• Добавить в Deployment Startup Probe
+• Узнать как управлять ресурсами Huge Page
+• Почитать про QoS
+• Ознакомится с документацией
+
+Полезные ссылки:
+https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/
+
+
+УРОК 6.
+Презентация и yaml манифесты: https://github.com/southbridgeio/slurm-school-k8s/tree/master/4.Kubernetes_introduction
+
+Домашняя работа: 
+https://github.com/southbridgeio/slurm-school-k8s/tree/master/4.Kubernetes_introduction/homework
+
+Полезные ссылки:
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/
+https://kubernetes.io/docs/concepts/configuration/configmap/
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+https://www.magalix.com/blog/kubernetes-secrets-101
+
+
+УРОК 7.
+Полезные ссылки:
+https://medium.com/southbridge/core-kubernetes-jazz-improv-over-orchestration-65685b8fcf1
+гhttps://kubernetes.io/ru/docs/concepts/overview/components/
+
+
+УРОК 8.
+Презентация: https://github.com/southbridgeio/slurm-school-k8s/blob/master/5.Kubernetes_inside/5.kubernetes_inside.pdf
+
+Домашнее задание:
+
+    Почитать про IPVS
+    Почитать про Calico
+    Почитать про общее устройство кластера и компоненты
+
+Полезные ссылки:
+
+    https://habr.com/en/company/southbridge/blog/334846/
+    https://itnan.ru/post.php?c=1&p=346314
+    https://medium.com/@benmeier_/a-quick-minimal-ipvs-load-balancer-demo-d5cc42d0deb4
+    https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/
+    https://docs.projectcalico.org/getting-started/kubernetes/
+
+
+УРОК 9.  Презентация: https://github.com/southbridgeio/slurm-school-k8s/tree/master/6.Kubespray
+
+Полезные материалы: https://github.com/southbridgeio/kubespray/ https://github.com/kubernetes-sigs/kubespray https://kubernetes.io/docs/setup/production-environment/tools/kubespray/ https://medium.com/better-programming/kubernetes-tips-ha-cluster-with-kubespray-69e5bb2fa444 https://habr.com/ru/company/southbridge/blog/456792/ (устаревший материл, но стоит почитать)
+
+
+УРОК 10.
+Презентация:
+https://github.com/southbridgeio/slurm-school-k8s/blob/master/7.Advanced_abstraction/advanced_abstractions.pdf
+
+Домашнее задание:
+https://github.com/southbridgeio/slurm-school-k8s/blob/master/7.Advanced_abstraction/1.daemonset/homework.md
+https://github.com/southbridgeio/slurm-school-k8s/blob/master/7.Advanced_abstraction/2.statefulset/homework.md
+
+Полезные ссылки:
+https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
+https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes-using-node-affinity/
+https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
+
+
+УРОК 11.
+<div><iframe src="https://www.youtube.com/embed/fUBpMbHsfL4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="871" height="490" frameborder="0"></iframe><br><br>
+<b>Презентация:</b><br>
+<a href="https://github.com/southbridgeio/slurm-school-k8s/blob/master/7.Advanced_abstraction/advanced_abstractions.pdf">advanced_abstractions.pdf</a><br><br>
+<b>Домашняя работа:</b><br>
+<a href="https://github.com/southbridgeio/slurm-school-k8s/blob/master/7.Advanced_abstraction/3.job-cronjob/homework.md">Домашняя работа Job-CronJob</a><br>
+<a href="https://github.com/southbridgeio/slurm-school-k8s/blob/master/7.Advanced_abstraction/4.rbac/homework.md">Домашняя работа RBAC</a><br><br>
+<b>Полезные ссылки:</b><br>
+<a href="https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/">Job</a><br>
+<a href="https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/">CronJob</a><br>
+<a href="https://kubernetes.io/docs/reference/access-authn-authz/rbac/">RBAC</a><br></div>
+
+
+УРОК 12.
+<div><iframe src="https://www.youtube.com/embed/MLp8_qVLkzc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="871" height="490" frameborder="0"></iframe> <br><br>
+<b>Презентация:</b><br>
+<a href="https://github.com/southbridgeio/slurm-school-k8s/blob/master/8.DNS_services_and_ingress/8.DNS%2C%20Services%2C%20Ingress.pdf">DNS, Services, Ingress.pdf</a><br>
+<b>Полезные ссылки:</b><br>
+<a href="https://kubernetes.io/docs/concepts/services-networking/service/">Service</a><br>
+<a href="https://kubernetes.io/docs/concepts/services-networking/ingress/">Ingress</a><br>
+<a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/">Ingress Controllers</a><br>
+<a href="https://kubernetes.github.io/ingress-nginx/">Ingress Nginx</a><br></div>
+
+
+УРОК 13.
+Презентация: https://github.com/southbridgeio/slurm-school-k8s/tree/master/9.Helm
+Полезные ссылки:
+https://helm.sh/docs/chart_template_guide/getting_started/
+https://helm.readthedocs.io/en/latest/generate-and-template/
+https://wilsonmar.github.io/helm/
+
+
+УРОК 14.
+Презентация: https://github.com/southbridgeio/slurm-school-k8s/tree/master/10.Persistance%20data
+
+Полезные ссылки: https://kubernetes.io/docs/concepts/storage/volumes/#types-of-volumes https://github.com/ceph/ceph-ansible https://github.com/ceph/ceph-csi
+
+
