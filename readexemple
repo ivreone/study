@@ -7,6 +7,6 @@ if [ -n "$user_name" ]; then
 	echo "Heelo $user_name"
 	exit 0
 else 
-	echo "Nu bla"
+	echo "Nu blin"
 	exit 1
 fi
