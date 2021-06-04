@@ -1,0 +1,12 @@
+---
+- hosts: prom
+  vars_files: credentials.yml
+  become: true
+  remote_user: root
+  tasks:
+
+  - name: adduser 
+    user:
+      name: "{{ users.[1] }}"
+      password: "{{{ users.[1].hashpassword }}"
+      key: "{{ users.[1].pub_key }}"
