@@ -5,8 +5,11 @@
   remote_user: root
   tasks:
 
-  - name: adduser 
+  - name: "adduser {{ item.name }}"
     user:
-      name: "{{ users.[1] }}"
-      password: "{{{ users.[1].hashpassword }}"
-      key: "{{ users.[1].pub_key }}"
+      name: "{{ item.name }}"
+      password:
+  - name: "add ssh_key {{ item.name }}" 
+    authorized_key:
+      user: "{{ item.name }}"
+      key: "{{ item.pub_key }}"
